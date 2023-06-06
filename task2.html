@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <style>
+      /* Reset default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Styles for the body */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+        line-height: 1.6;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Styles for the header */
+      header {
+        margin-bottom: 40px;
+      }
+
+      header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        color: white;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      header p {
+        font-size: 20px;
+        color: #777;
+        animation: fadeIn 1s ease-in-out 0.5s;
+      }
+
+      /* Styles for the main content */
+      .main-content {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      /* Styles for the about section */
+      .about-section {
+        margin-bottom: 40px;
+      }
+
+      .about-section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: white;
+        animation: fadeIn 1s ease-in-out 1s;
+      }
+
+      .about-section p {
+        font-size: 20px;
+        color: #777;
+        animation: fadeIn 1s ease-in-out 1.5s;
+      }
+
+      /* Styles for the portfolio section */
+      .portfolio-section {
+        margin-bottom: 40px;
+        animation: slideUp 1s ease-in-out;
+      }
+
+      .portfolio-section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: white;
+        animation: fadeIn 1s ease-in-out 1s;
+      }
+
+      .portfolio {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+      }
+
+      .portfolio-item {
+        flex-basis: 33%;
+        padding: 10px;
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      /* Animation keyframes */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Styles for the footer */
+      footer {
+        margin-top: 40px;
+        animation: slideUp 1s ease-in-out;
+      }
+
+      footer p {
+        color: #777;
+      }
+      .profile-picture {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: fadeIn 1s ease-in-out 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Professional Portfolio</h1>
+      <p>Showcasing my work and skills</p>
+    </header>
+
+    <div class="main-content">
+      <section class="about-section">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-picture" />
+        <p>
+          I am a passionate web developer with expertise in HTML, CSS, and
+          JavaScript. I love creating beautiful and user-friendly websites.
+        </p>
+      </section>
+
+      <section class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+          <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1" />
+          </div>
+          <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2" />
+          </div>
+          <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3" />
+          </div>
+          <div class="portfolio-item">
+            <img src="project4.jpg" alt="Project 4" />
+          </div>
+          <div class="portfolio-item">
+            <img src="project5.jpg" alt="Project 5" />
+          </div>
+          <div class="portfolio-item">
+            <img src="project6.jpg" alt="Project 6" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Professional Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
